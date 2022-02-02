@@ -1,0 +1,130 @@
+[
+    { include: [ "@\"gtest/gtest.h\"", "public", "<gtest/gtest.h>", "public" ] },
+
+    { include: [ "@\"entt/.*/config/config.h\"", "public", "<entt/config/config.h>", "public" ] },
+    { include: [ "@\"entt/.*/config/version.h\"", "public", "<entt/config/version.h>", "public" ] },
+
+    { include: [ "@\"entt/.*/container/dense_map.hpp\"", "public", "<entt/container/dense_map.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/container/dense_set.hpp\"", "public", "<entt/container/dense_set.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/core/algorithm.hpp\"", "public", "<entt/core/algorithm.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/any.hpp\"", "public", "<entt/core/any.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/attribute.h\"", "public", "<entt/core/attribute.h>", "public" ] },
+    { include: [ "@\"entt/.*/core/compressed_pair.hpp\"", "public", "<entt/core/compressed_pair.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/enum.hpp\"", "public", "<entt/core/enum.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/family.hpp\"", "public", "<entt/core/family.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/hashed_string.hpp\"", "public", "<entt/core/hashed_string.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/ident.hpp\"", "public", "<entt/core/ident.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/iterator.hpp\"", "public", "<entt/core/iterator.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/memory.hpp\"", "public", "<entt/core/memory.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/monostate.hpp\"", "public", "<entt/core/monostate.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/tuple.hpp\"", "public", "<entt/core/tuple.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/type_info.hpp\"", "public", "<entt/core/type_info.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/type_traits.hpp\"", "public", "<entt/core/type_traits.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/type_traits.hpp\"", "public", "<entt/core/type_traits.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/core/utility.hpp\"", "public", "<entt/core/utility.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/entity/component.hpp\"", "public", "<entt/entity/component.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/entity.hpp\"", "public", "<entt/entity/entity.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/group.hpp\"", "public", "<entt/entity/group.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/handle.hpp\"", "public", "<entt/entity/handle.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/helper.hpp\"", "public", "<entt/entity/helper.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/observer.hpp\"", "public", "<entt/entity/observer.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/organizer.hpp\"", "public", "<entt/entity/organizer.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/registry.hpp\"", "public", "<entt/entity/registry.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/runtime_view.hpp\"", "public", "<entt/entity/runtime_view.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/snapshot.hpp\"", "public", "<entt/entity/snapshot.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/sparse_set.hpp\"", "public", "<entt/entity/sparse_set.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/storage.hpp\"", "public", "<entt/entity/storage.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/utility.hpp\"", "public", "<entt/entity/utility.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/entity/view.hpp\"", "public", "<entt/entity/view.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/locator/locator.hpp\"", "public", "<entt/locator/locator.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/meta/adl_pointer.hpp\"", "public", "<entt/meta/adl_pointer.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/container.hpp\"", "public", "<entt/meta/container.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/ctx.hpp\"", "public", "<entt/meta/ctx.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/factory.hpp\"", "public", "<entt/meta/factory.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/meta.hpp\"", "public", "<entt/meta/meta.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/node.hpp\"", "public", "<entt/meta/node.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/pointer.hpp\"", "public", "<entt/meta/pointer.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/policy.hpp\"", "public", "<entt/meta/policy.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/range.hpp\"", "public", "<entt/meta/range.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/resolve.hpp\"", "public", "<entt/meta/resolve.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/template.hpp\"", "public", "<entt/meta/template.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/type_traits.hpp\"", "public", "<entt/meta/type_traits.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/meta/utility.hpp\"", "public", "<entt/meta/utility.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/platform/android-ndk-r17.hpp\"", "public", "<entt/platform/android-ndk-r17.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/poly/poly.hpp\"", "public", "<entt/poly/poly.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/process/process.hpp\"", "public", "<entt/process/process.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/process/scheduler.hpp\"", "public", "<entt/process/scheduler.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/resource/cache.hpp\"", "public", "<entt/resource/cache.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/resource/handle.hpp\"", "public", "<entt/resource/handle.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/resource/loader.hpp\"", "public", "<entt/resource/loader.hpp>", "public" ] },
+
+    { include: [ "@\"entt/.*/signal/delegate.hpp\"", "public", "<entt/signal/delegate.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/signal/dispatcher.hpp\"", "public", "<entt/signal/dispatcher.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/signal/emitter.hpp\"", "public", "<entt/signal/emitter.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/signal/sigh.hpp\"", "public", "<entt/signal/sigh.hpp>", "public" ] },
+
+
+
+    { include: [ "@\".*/container/fwd.hpp\"", "public", "<entt/container/dense_map.hpp>", "public" ] },
+    { include: [ "@\".*/container/fwd.hpp\"", "public", "<entt/container/dense_set.hpp>", "public" ] },
+
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/any.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/family.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/hashed_string.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/indent.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/monostate.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/type_info.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/core/type_traits.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/entity/fwd.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/meta/factory.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/meta/meta.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/meta/node.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/resource/cache.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/signal/dispatcher.hpp>", "public" ] },
+    { include: [ "@\".*/core/fwd.hpp\"", "public", "<entt/signal/emitter.hpp>", "public" ] },
+
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/entity.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/group.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/handle.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/helper.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/observer.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/organizer.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/registry.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/runtime_view.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/snapshot.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/sparse_set.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/storage.hpp>", "public" ] },
+    { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/view.hpp>", "public" ] },
+
+    { include: [ "@\".*/entity/sparse_set.hpp\"", "public", "<entt/entity/registry.hpp>", "public" ] },
+    { include: [ "@\".*/entity/storage.hpp\"", "public", "<entt/entity/registry.hpp>", "public" ] },
+
+    { include: [ "@\".*/poly/fwd.hpp\"", "public", "<entt/poly/poly.hpp>", "public" ] },
+
+    { include: [ "@\".*/resource/fwd.hpp\"", "public", "<entt/resource/cache.hpp>", "public" ] },
+    { include: [ "@\".*/resource/fwd.hpp\"", "public", "<entt/resource/handle.hpp>", "public" ] },
+    { include: [ "@\".*/resource/fwd.hpp\"", "public", "<entt/resource/loader.hpp>", "public" ] },
+
+    { include: [ "@\".*/signal/fwd.hpp\"", "public", "<entt/signal/sigh.hpp>", "public" ] },
+
+    { symbol: [ "std::hash", "private", "<entt/container/fwd.hpp>", "public" ] },
+    { symbol: [ "std::equal_to", "private", "<entt/container/fwd.hpp>", "public" ] },
+    { symbol: [ "std::allocator", "private", "<entt/container/fwd.hpp>", "public" ] },
+
+    { symbol: [ "std::less", "private", "<entt/core/algorithm.hpp>", "public" ] },
+    { symbol: [ "entt::identity", "private", "<entt/core/algorithm.hpp>", "public" ] },
+
+    { symbol: [ "std::allocator", "private", "<entt/entity/fwd.hpp>", "public" ] },
+
+    { symbol: [ "std::allocator", "private", "<entt/entity/fwd.hpp>", "public" ] },
+
+    { symbol: [ "std::allocator", "private", "<entt/signal/fwd.hpp>", "public" ] }
+]

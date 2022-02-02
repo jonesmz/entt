@@ -3,7 +3,6 @@
 
 #include <type_traits>
 #include "../config/config.h"
-#include "../core/fwd.hpp"
 #include "../core/type_traits.hpp"
 #include "../signal/delegate.hpp"
 #include "fwd.hpp"

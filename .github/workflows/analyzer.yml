@@ -1,0 +1,33 @@
+name: analyzer
+
+on: [push, pull_request]
+
+jobs:
+
+  iwyu:
+    timeout-minutes: 10
+
+    strategy:
+      matrix:
+        compiler:
+          - pkg: clang-9
+            exe: clang++-9
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install iwyu
+      run: |
+        sudo apt-get update
+        sudo apt-get install iwyu ${{ matrix.compiler.pkg }} -y
+    - name: Print iwyu version
+      run:
+        iwyu --version
+    - name: Compile tests
+      working-directory: build
+      env:
+        CXX: ${{ matrix.compiler.exe }}
+      run: |
+        cmake -DENTT_BUILD_TESTING=ON -DENTT_BUILD_BENCHMARK=ON -DENTT_BUILD_EXAMPLE=ON -DENTT_BUILD_LIB=ON -DENTT_BUILD_SNAPSHOT=ON -DCMAKE_CXX_INCLUDE_WHAT_YOU_USE="include-what-you-use;-Xiwyu;--mapping_file=${GITHUB_WORKSPACE}/entt.imp;-Xiwyu;--no_fwd_decls;-Xiwyu;--verbose=3" ..
+        make -j4
