@@ -1,7 +1,7 @@
 #ifndef ENTT_ENTITY_FWD_HPP
 #define ENTT_ENTITY_FWD_HPP
 
-#include <memory>
+#include <memory> // IWYU pragma: export
 #include "../core/fwd.hpp"
 #include "utility.hpp"
 

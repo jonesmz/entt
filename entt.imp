@@ -1,5 +1,11 @@
 [
-    { include: [ "@\"gtest/gtest.h\"", "public", "<gtest/gtest.h>", "public" ] },
+    { ref: /usr/share/include-what-you-use/gcc.libc.imp },
+    { ref: /usr/share/include-what-you-use/gcc.symbols.imp },
+    { ref: /usr/share/include-what-you-use/stl.c.headers.imp },
+    { ref: /usr/share/include-what-you-use/gcc.stl.headers.imp },
+
+    { include: [ "@<gtest/internal/.*>", private, "<gtest/gtest.h>", public ] },
+    { include: [ "@<gtest/gtest-.*>",    private, "<gtest/gtest.h>", public ] },
 
     { include: [ "@\"entt/.*/config/config.h\"", "public", "<entt/config/config.h>", "public" ] },
     { include: [ "@\"entt/.*/config/version.h\"", "public", "<entt/config/version.h>", "public" ] },
@@ -70,7 +76,6 @@
     { include: [ "@\"entt/.*/signal/dispatcher.hpp\"", "public", "<entt/signal/dispatcher.hpp>", "public" ] },
     { include: [ "@\"entt/.*/signal/emitter.hpp\"", "public", "<entt/signal/emitter.hpp>", "public" ] },
     { include: [ "@\"entt/.*/signal/sigh.hpp\"", "public", "<entt/signal/sigh.hpp>", "public" ] },
-
 
 
     { include: [ "@\".*/container/fwd.hpp\"", "public", "<entt/container/dense_map.hpp>", "public" ] },

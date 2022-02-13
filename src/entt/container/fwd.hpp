@@ -1,8 +1,8 @@
 #ifndef ENTT_CONTAINER_FWD_HPP
 #define ENTT_CONTAINER_FWD_HPP
 
-#include <functional>
-#include <memory>
+#include <functional> // IWYU pragma: export
+#include <memory>     // IWYU pragma: export
 
 namespace entt {
 
