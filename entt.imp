@@ -10,8 +10,8 @@
     { include: [ "@\"entt/.*/config/config.h\"", "public", "<entt/config/config.h>", "public" ] },
     { include: [ "@\"entt/.*/config/version.h\"", "public", "<entt/config/version.h>", "public" ] },
 
-    { include: [ "@\"entt/.*/container/dense_map.hpp\"", "public", "<entt/container/dense_map.hpp>", "public" ] },
-    { include: [ "@\"entt/.*/container/dense_set.hpp\"", "public", "<entt/container/dense_set.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/container/dense_map.hpp\"", "private", "<entt/container/dense_map.hpp>", "public" ] },
+    { include: [ "@\"entt/.*/container/dense_set.hpp\"", "private", "<entt/container/dense_set.hpp>", "public" ] },
 
     { include: [ "@\"entt/.*/core/algorithm.hpp\"", "public", "<entt/core/algorithm.hpp>", "public" ] },
     { include: [ "@\"entt/.*/core/any.hpp\"", "public", "<entt/core/any.hpp>", "public" ] },
@@ -77,7 +77,6 @@
     { include: [ "@\"entt/.*/signal/emitter.hpp\"", "public", "<entt/signal/emitter.hpp>", "public" ] },
     { include: [ "@\"entt/.*/signal/sigh.hpp\"", "public", "<entt/signal/sigh.hpp>", "public" ] },
 
-
     { include: [ "@\".*/container/fwd.hpp\"", "public", "<entt/container/dense_map.hpp>", "public" ] },
     { include: [ "@\".*/container/fwd.hpp\"", "public", "<entt/container/dense_set.hpp>", "public" ] },
 
@@ -120,16 +119,15 @@
 
     { include: [ "@\".*/signal/fwd.hpp\"", "public", "<entt/signal/sigh.hpp>", "public" ] },
 
-    { symbol: [ "std::hash", "private", "<entt/container/fwd.hpp>", "public" ] },
-    { symbol: [ "std::equal_to", "private", "<entt/container/fwd.hpp>", "public" ] },
-    { symbol: [ "std::allocator", "private", "<entt/container/fwd.hpp>", "public" ] },
-
-    { symbol: [ "std::less", "private", "<entt/core/algorithm.hpp>", "public" ] },
     { symbol: [ "entt::identity", "private", "<entt/core/algorithm.hpp>", "public" ] },
 
-    { symbol: [ "std::allocator", "private", "<entt/entity/fwd.hpp>", "public" ] },
+    { symbol: [ "std::hash", "private", "<entt/container/fwd.hpp>", "public" ] },
+    { symbol: [ "std::equal_to", "private", "<entt/container/fwd.hpp>", "public" ] },
 
-    { symbol: [ "std::allocator", "private", "<entt/entity/fwd.hpp>", "public" ] },
+    { symbol: [ "std::less", "private", "<entt/core/algorithm.hpp>", "public" ] },
 
-    { symbol: [ "std::allocator", "private", "<entt/signal/fwd.hpp>", "public" ] }
+    { symbol: [ "std::allocator", "private", "<entt/core/fwd.hpp>", "public" ] },
+    { symbol: [ "std::allocator", "private", "<entt/entity/fwd.hpp>", "public" ] },
+    { symbol: [ "std::allocator", "private", "<entt/signal/fwd.hpp>", "public" ] },
+    { symbol: [ "std::allocator", "private", "<entt/container/fwd.hpp>", "public" ] }
 ]
