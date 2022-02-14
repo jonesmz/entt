@@ -108,14 +108,15 @@
     { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/storage.hpp>", "public" ] },
     { include: [ "@\".*/entity/fwd.hpp\"", "public", "<entt/entity/view.hpp>", "public" ] },
 
-    { include: [ "@\".*/entity/sparse_set.hpp\"", "public", "<entt/entity/registry.hpp>", "public" ] },
-    { include: [ "@\".*/entity/storage.hpp\"", "public", "<entt/entity/registry.hpp>", "public" ] },
-
     { include: [ "@\".*/poly/fwd.hpp\"", "public", "<entt/poly/poly.hpp>", "public" ] },
 
     { include: [ "@\".*/resource/fwd.hpp\"", "public", "<entt/resource/cache.hpp>", "public" ] },
     { include: [ "@\".*/resource/fwd.hpp\"", "public", "<entt/resource/handle.hpp>", "public" ] },
     { include: [ "@\".*/resource/fwd.hpp\"", "public", "<entt/resource/loader.hpp>", "public" ] },
+
+    { include: [ "@\".*/entity/storage.hpp\"", "private", "<entt/entity/registry.hpp>", "public" ] },
+    { include: [ "@\".*/entity/dense_map.hpp\"", "private", "<entt/entity/registry.hpp>", "public" ] },
+    { include: [ "@\".*/entity/sparse_set.hpp\"", "private", "<entt/entity/registry.hpp>", "public" ] },
 
     { include: [ "@\".*/signal/fwd.hpp\"", "public", "<entt/signal/sigh.hpp>", "public" ] },
 
