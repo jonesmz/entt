@@ -1,6 +1,7 @@
 #ifndef ENTT_ENTITY_REGISTRY_HPP
 #define ENTT_ENTITY_REGISTRY_HPP
 
+// IWYU pragma: begin_exports
 #include <algorithm>
 #include <cstddef>
 #include <iterator>
@@ -9,6 +10,9 @@
 #include <type_traits>
 #include <utility>
 #include <vector>
+// IWYU pragma: end_exports
+
+// IWYU pragma: begin_exports
 #include "../config/config.h"
 #include "../container/dense_map.hpp"
 #include "../core/algorithm.hpp"
@@ -17,6 +21,8 @@
 #include "../core/type_info.hpp"
 #include "../core/type_traits.hpp"
 #include "../core/utility.hpp"
+// IWYU pragma: end_exports
+
 #include "component.hpp"
 #include "entity.hpp"
 #include "fwd.hpp"
